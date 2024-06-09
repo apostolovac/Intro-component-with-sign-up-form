@@ -86,9 +86,12 @@ button {
 }
 
 .container {
+    margin: 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    align-content: center;
     gap: 45px;
 }
 
