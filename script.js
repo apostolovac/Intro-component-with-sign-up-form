@@ -16,14 +16,14 @@ function validateForm() {
    if (element === emailInput) {
     element.value = "email@example.com";
     element.style.color = "#FF7979";
-    element.nextElementSibling.textContent = "Email cannot be empty";
+    element.nextElementSibling.textContent = "Email cannot be empty.";
    }
   } else {
    element.classList.remove("error");
    element.nextElementSibling.style.display = "none";
    if (element === emailInput && !isValidEmail(element.value)) {
     element.nextElementSibling.style.display = "flex";
-    element.nextElementSibling.textContent = "Looks like this is not an email";
+    element.nextElementSibling.textContent = "Looks like this is not an email.";
    }
   }
  });
