@@ -6,9 +6,7 @@ function isValidEmail(email) {
  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
  return emailRegex.test(email);
 }
-submitBtn.addEventListener("click", validateForm);
-
-function validateForm() {
+submitBtn.addEventListener("click", () => {
  inputElements.forEach((element) => {
   if (element.value === "") {
    element.classList.add("error");
@@ -27,7 +25,7 @@ function validateForm() {
    }
   }
  });
-}
+});
 
 inputElements.forEach((element) => {
  element.addEventListener("input", () => {
